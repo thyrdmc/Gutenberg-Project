@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE7A0543-0286-4F20-BBCB-6A8E3D307DF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GutenbergProject</RootNamespace>
+    <AssemblyName>GutenbergProject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Connection.cs" />
+    <Compile Include="Classes\LoginHistory.cs" />
+    <Compile Include="Classes\Personal.cs" />
+    <Compile Include="frmAddingBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddingBook.Designer.cs">
+      <DependentUpon>frmAddingBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArt.Designer.cs">
+      <DependentUpon>frmArt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChildren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChildren.Designer.cs">
+      <DependentUpon>frmChildren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComicStrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComicStrip.Designer.cs">
+      <DependentUpon>frmComicStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistory.Designer.cs">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiterature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiterature.Designer.cs">
+      <DependentUpon>frmLiterature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Program.cs" />
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMysticism.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMysticism.Designer.cs">
+      <DependentUpon>frmMysticism.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonalGrowth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonalGrowth.Designer.cs">
+      <DependentUpon>frmPersonalGrowth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfile.Designer.cs">
+      <DependentUpon>frmProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScienceFiction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScienceFiction.Designer.cs">
+      <DependentUpon>frmScienceFiction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLanguage.Designer.cs">
+      <DependentUpon>frmLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowingBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowingBooks.Designer.cs">
+      <DependentUpon>frmShowingBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddingBook.resx">
+      <DependentUpon>frmAddingBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArt.resx">
+      <DependentUpon>frmArt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChildren.resx">
+      <DependentUpon>frmChildren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComicStrip.resx">
+      <DependentUpon>frmComicStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistory.resx">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiterature.resx">
+      <DependentUpon>frmLiterature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMysticism.resx">
+      <DependentUpon>frmMysticism.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonalGrowth.resx">
+      <DependentUpon>frmPersonalGrowth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfile.resx">
+      <DependentUpon>frmProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScienceFiction.resx">
+      <DependentUpon>frmScienceFiction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLanguage.resx">
+      <DependentUpon>frmLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowingBooks.resx">
+      <DependentUpon>frmShowingBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddBookBackground.jpg" />
+    <None Include="Books\Hayvan_Çiftliği.jpg" />
+    <None Include="Books\Fahrenheit_451.jpg" />
+    <None Include="Books\Körlük.jpg" />
+    <None Include="Books\Pembe_Fili_Düşünme.jpg" />
+    <None Include="Books\Simyacı.jpg" />
+    <None Include="Books\Sineklerin_Tanrısı.jpg" />
+    <None Include="Books\Suç_ve_Ceza.jpg" />
+    <None Include="Books\Şeker_Portakalı.jpg" />
+    <None Include="Books\Tabele.jpg" />
+    <Content Include="Resources\background.jpg" />
+    <Content Include="Resources\background_main %281%29.jpg" />
+    <Content Include="Resources\background_main %282%29.jpg" />
+    <Content Include="Resources\bilim_110x110.jpg" />
+    <None Include="Resources\bookstack.png" />
+    <Content Include="Resources\cizgi_roman_110x110.jpg" />
+    <Content Include="Resources\close.png" />
+    <Content Include="Resources\cocuk_110x110.jpg" />
+    <Content Include="Resources\din_ve_tasavvuf_110x110.jpg" />
+    <Content Include="Resources\edebiyat_110x110.jpg" />
+    <Content Include="Resources\kisisel_gelisim_110x110.jpg" />
+    <Content Include="Resources\logo.ico" />
+    <Content Include="Resources\minimize.png" />
+    <Content Include="Resources\panel.png" />
+    <Content Include="Resources\profile_template.jpg" />
+    <None Include="Resources\register.jpg" />
+    <Content Include="Resources\sanat_110x110.jpg" />
+    <Content Include="Resources\tarih_110x110.jpg" />
+    <Content Include="Resources\yabanc_dil_110x110.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ProfilePictures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
